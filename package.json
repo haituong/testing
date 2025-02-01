@@ -9,8 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "@ant-design/nextjs-registry": "^1.0.2",
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/modifiers": "^9.0.0",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@next/font": "^14.2.15",
+    "antd": "^5.22.5",
+    "antd-style": "^3.7.1",
+    "bootstrap": "^5.3.3",
+    "bootstrap-daterangepicker": "^3.1.0",
+    "cookie-parser": "^1.4.7",
+    "googleapis": "^144.0.0",
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21",
+    "lodash.debounce": "^4.0.8",
+    "next": "15.1.0",
+    "next-intl": "^3.26.3",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.8.5",
+    "react": "^18.0.0",
+    "react-bootstrap": "^2.10.7",
+    "react-bootstrap-daterangepicker": "^8.0.0",
+    "react-custom-scrollbars-2": "^4.5.0",
+    "react-datepicker": "^7.5.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^7.0.2",
+    "react-scrollbars-custom": "^4.1.1",
+    "react-select": "^5.9.0",
+    "react-time-picker": "^7.0.0",
+    "sass": "^1.83.0"
   }
 }

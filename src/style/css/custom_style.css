@@ -1,0 +1,345 @@
+.spinner {
+  margin: auto;
+}
+
+.main-wrapper {
+  height: 100vh;
+}
+
+.main-wrapper .page-wrapper {
+  height: 100%;
+}
+
+.page-wrapper .content {
+  padding: 12px;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+.page-header {
+  margin-bottom: 10px;
+}
+
+.table-cell-custom {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-form-in-drawer-wrapper {
+  position: absolute;
+  inset-inline-end: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 16px;
+  text-align: right;
+  background: #fff;
+  border-top: 1px solid #e9e9e9;
+}
+
+.drawer-detail .ant-drawer-header {
+  padding: 0 !important;
+}
+
+.bg-layout {
+  background-color: #ebeff3;
+}
+
+.drawer-detail .ant-drawer-body {
+  /* background-color: #f1f1f1; */
+  padding: 0 !important;
+}
+
+.custom-dropdown {
+  border: 1px solid #d3d0d0;
+  /* Add a light gray border */
+  border-radius: 4px;
+  /* Optional: for rounded corners */
+  background-color: #fff;
+  /* Ensure the background remains white */
+}
+
+.custom-dropdown .ant-dropdown-menu-item {
+  padding: 8px 16px;
+  /* Adjust padding for better visibility */
+}
+
+.arrow-button {
+  border: none;
+  background-color: #1890ff;
+  /* Blue background */
+  color: white;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 8px 0 0 8px;
+  /* Rounded left corners */
+}
+
+.arrow-button:hover {
+  background-color: #40a9ff;
+  /* Lighter blue on hover */
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #1890ff;
+  /* Triangle effect */
+  margin-left: -1px;
+  /* Overlap the right edge of the button */
+}
+
+.filter-drawer .ant-drawer-body {
+  padding: 0 !important;
+}
+
+.strip-container {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  width: 100%;
+  font-weight: 500;
+}
+
+.strip-stage {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  line-height: 25px;
+  min-width: 100px;
+  cursor: pointer;
+  text-overflow: ellipsis;
+}
+
+.strip-stage,
+.strip-stage::after {
+  color: #475867;
+  background: #cfd7df;
+}
+
+.strip-stage.stage-completed,
+.strip-stage.stage-current {
+  background: #c3e6cb;
+  color: #155724;
+}
+
+.strip-stage .stage-dropdown {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.strip-stage.stage-completed:after,
+.strip-stage.stage-current:after {
+  background: #c3e6cb;
+}
+
+.strip-stage.stage-completed.stage-closed-lost {
+  background: #f5c6cb;
+  color: #721c24;
+}
+
+.strip-stage.stage-completed.stage-closed-lost::after {
+  background: #f5c6cb;
+}
+
+.strip-stage:not(:last-child)::after {
+  box-shadow: 1px -1px 0 1px #fff, 1px -1px 0 1px #fff;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -7px;
+  width: 17px;
+  height: 17px;
+  z-index: 1;
+  border-radius: 0 0 0 25px;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.strip-stage:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.last-stage {
+  border-radius: 0 10px 10px 0;
+}
+
+.filter-container {
+  margin: 0;
+  padding: 15px;
+  border-bottom: 1px solid #cfd7df;
+}
+
+.kanban-board .card-wrapper-antd {
+  border-right: 1px solid #cfd7df;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* Ensure the card wrapper spans full height */
+}
+
+.kanban-board .card-wrapper-antd > .ant-card-body {
+  padding: 0px;
+  flex: 1;
+  /* Ensures the body fills the remaining space */
+  background-color: #ebeff3;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  /* Allows scrolling inside the card if content overflows */
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+.droppable {
+  border: 2px dashed #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.kanban-item-title {
+  font-size: 14px !important;
+  color: #2c5cc5 !important;
+  font-weight: bold;
+}
+
+.kanban-item-title:hover {
+  color: #547fdb !important;
+}
+
+.kanban-item-description {
+  font-size: 14px !important;
+  color: #2c5cc5 !important;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.kanban-item-description:hover {
+  color: #7b9ce4 !important;
+}
+
+.kanban-item-product {
+  background-color: #f0f5ff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.deal-sub-title {
+  color: #475867;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.droppable-container {
+  border: 1px solid #ccc;
+  width: 300px;
+  min-height: 200px;
+  background-color: #f9f9f9;
+  flex-shrink: 0;
+  border-radius: "8px";
+}
+
+.droppable-header {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: #ffffff;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.droppable-header-title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.droppable-body {
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  max-height: calc(100% - 40px);
+  padding: 10px;
+}
+
+.product-drawer-pricing {
+  border-radius: 8px;
+  background-color: #f5f7f9;
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+}
+
+.product-detail-label {
+  font-weight: bold;
+  color: #888;
+}
+
+.product-detail-value {
+  margin: 0;
+  color: #12344d;
+}
+
+.account-bg-01 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../../public/assets/img/authentication/login-bg.ba145fd2cdf6902ce866.jpg);
+}
+
+.custom-form .ant-form-item {
+  margin-bottom: 10px !important;
+}
+
+.demo-logo {
+    width: 120px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline-end: 24px;
+}
+
+.demo-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Optional: Add hover effect for the dropdown */
+.ant-dropdown-trigger:hover {
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}

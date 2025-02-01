@@ -1,0 +1,67 @@
+{
+  "signIn": {
+    "title": "Sign In",
+    "description": "Access the CRMS panel using your email and password.",
+    "email": "Email Address",
+    "password": "Password",
+    "emailRequired": "Please enter your email!",
+    "validEmail": "Please enter a valid email!",
+    "passwordRequired": "Please enter your password!",
+    "rememberMe": "Remember Me",
+    "forgotPassword": "Forgot Password?",
+    "signInButton": "Sign In",
+    "newOnPlatform": "New on our platform?",
+    "createAccount": "Create an account",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password"
+  },
+  "signUp": {
+    "title": "Create an Account",
+    "description": "Sign up to start using the CRMS panel.",
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "emailRequired": "Please enter your email!",
+    "validEmail": "Please enter a valid email!",
+    "passwordRequired": "Please enter your password!",
+    "passwordMinLength": "Password must be at least 6 characters.",
+    "confirmPasswordRequired": "Please confirm your password!",
+    "passwordMismatch": "Passwords do not match!",
+    "termsAgreement": "I agree to the terms and conditions",
+    "signUpButton": "Sign Up",
+    "existingAccount": "Already have an account?",
+    "signIn": "Sign In",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
+    "confirmPasswordPlaceholder": "Confirm Password"
+  },
+  "forgotPassword": {
+    "title": "Forgot Your Password?",
+    "description": "Enter your email address below, and we'll send you instructions to reset your password.",
+    "email": "Email Address",
+    "emailRequired": "Please enter your email!",
+    "validEmail": "Please enter a valid email!",
+    "emailPlaceholder": "Enter your email",
+    "submitButton": "Send Reset Instructions",
+    "returnToSignIn": "Remembered your password?",
+    "signIn": "Sign In"
+  },
+  "headerComponent": {
+    "settingTitle": "Settings",
+    "logOutTitle": "Log out"
+  },
+  "sidebarComponent": {
+    "CRM": "CRM",
+    "Inventory": "Inventory",
+    "Contacts": "Contacts",
+    "Companies": "Companies",
+    "Deals": "Deals",
+    "Products": "Products",
+    "Pipeline": "Pipeline",
+    "USER MANAGEMENT": "User Management",
+    "Sales": "Sales",
+    "Manage Users": "Manage Users",
+    "Roles": "Roles",
+    "Delete Request": "Delete Request"
+  }
+}

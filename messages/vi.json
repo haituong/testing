@@ -1,0 +1,67 @@
+{
+  "signIn": {
+    "title": "Đăng Nhập",
+    "description": "Truy cập CRMS bằng email và mật khẩu của bạn.",
+    "email": "Địa chỉ Email",
+    "password": "Mật khẩu",
+    "emailRequired": "Vui lòng nhập email của bạn!",
+    "validEmail": "Vui lòng nhập email hợp lệ!",
+    "passwordRequired": "Vui lòng nhập mật khẩu của bạn!",
+    "rememberMe": "Ghi nhớ tôi",
+    "forgotPassword": "Quên mật khẩu?",
+    "signInButton": "Đăng Nhập",
+    "newOnPlatform": "Mới trên nền tảng của chúng tôi?",
+    "createAccount": "Tạo tài khoản",
+    "emailPlaceholder": "Nhập email của bạn",
+    "passwordPlaceholder": "Nhập mật khẩu của bạn"
+  },
+  "signUp": {
+    "title": "Tạo tài khoản",
+    "description": "Đăng ký để bắt đầu sử dụng bảng điều khiển CRMS.",
+    "email": "Địa chỉ email",
+    "password": "Mật khẩu",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "emailRequired": "Vui lòng nhập email của bạn!",
+    "validEmail": "Vui lòng nhập email hợp lệ!",
+    "passwordRequired": "Vui lòng nhập mật khẩu!",
+    "passwordMinLength": "Mật khẩu phải có ít nhất 6 ký tự.",
+    "confirmPasswordRequired": "Vui lòng xác nhận mật khẩu của bạn!",
+    "passwordMismatch": "Mật khẩu không khớp!",
+    "termsAgreement": "Tôi đồng ý với các điều khoản và điều kiện",
+    "signUpButton": "Đăng ký",
+    "existingAccount": "Đã có tài khoản?",
+    "signIn": "Đăng nhập",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Mật khẩu",
+    "confirmPasswordPlaceholder": "Xác nhận mật khẩu"
+  },
+  "forgotPassword": {
+    "title": "Quên Mật Khẩu?",
+    "description": "Nhập địa chỉ email của bạn dưới đây, chúng tôi sẽ gửi hướng dẫn để bạn đặt lại mật khẩu.",
+    "email": "Địa chỉ Email",
+    "emailRequired": "Vui lòng nhập email của bạn!",
+    "validEmail": "Vui lòng nhập email hợp lệ!",
+    "emailPlaceholder": "Nhập email của bạn",
+    "submitButton": "Gửi Hướng Dẫn Đặt Lại Mật Khẩu",
+    "returnToSignIn": "Nhớ mật khẩu?",
+    "signIn": "Đăng Nhập"
+  },
+  "headerComponent": {
+    "settingTitle": "Cài đặt",
+    "logOutTitle": "Đăng xuất"
+  },
+  "sidebarComponent": {
+    "CRM": "CRM",
+    "Inventory": "Hàng tồn kho",
+    "Contacts": "Liên hệ",
+    "Companies": "Công ty",
+    "Deals": "Giao dịch",
+    "Products": "Sản phẩm",
+    "Pipeline": "Đường ống",
+    "USER MANAGEMENT": "Quản lý người dùng",
+    "Sales": "Bán hàng",
+    "Manage Users": "Quản lý người dùng",
+    "Roles": "Vai trò",
+    "Delete Request": "Yêu cầu xóa"
+  }
+}
