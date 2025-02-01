@@ -1,13 +1,14 @@
 "use client";
 
 import React from "react";
-import { Layout, Dropdown, Avatar, Badge, Button, message } from "antd";
+import { Layout, Dropdown, Avatar, Badge, Button, message, List } from "antd";
 import {
   BellOutlined,
   UserOutlined,
   SettingOutlined,
   LogoutOutlined,
   MenuOutlined,
+  TranslationOutlined,
 } from "@ant-design/icons";
 import ImageWithBasePath from "@/common/imageWithBasePath";
 import { useTranslations } from "next-intl";
@@ -32,6 +33,11 @@ const HeaderComponent = ({ onToggleSidebar }) => {
     setTimeout(() => {
       router.push(`/${currentLocale}/sign-in`);
     }, 1000);
+  };
+
+  const handleLanguageChange = (locale) => {
+    const newPathname = pathname.replace(`/${currentLocale}`, `/${locale}`);
+    router.push(newPathname);
   };
 
   const menuItems = [
@@ -64,6 +70,70 @@ const HeaderComponent = ({ onToggleSidebar }) => {
     },
   ];
 
+  const languageItems = [
+    {
+      key: "en",
+      label: "English",
+      onClick: () => handleLanguageChange("en"),
+    },
+    {
+      key: "vi",
+      label: "Tiếng Việt",
+      onClick: () => handleLanguageChange("vi"),
+    },
+    {
+      key: "fr",
+      label: "Français",
+      onClick: () => handleLanguageChange("fr"),
+    },
+    {
+      key: "es",
+      label: "Español",
+      onClick: () => handleLanguageChange("es"),
+    },
+    // Add more languages as needed
+  ];
+
+  // Mock notification data
+  const notifications = [
+    {
+      id: 1,
+      title: "New Message",
+      description: "You have a new message from John Doe.",
+    },
+    {
+      id: 2,
+      title: "Reminder",
+      description: "Your meeting is scheduled for 3 PM today.",
+    },
+    {
+      id: 3,
+      title: "System Update",
+      description: "A new system update is available.",
+    },
+  ];
+
+  const notificationItems = [
+    {
+      key: "notifications",
+      label: (
+        <div style={{ width: "300px" }}>
+          <List
+            dataSource={notifications}
+            renderItem={(item) => (
+              <List.Item>
+                <List.Item.Meta
+                  title={item.title}
+                  description={item.description}
+                />
+              </List.Item>
+            )}
+          />
+        </div>
+      ),
+    },
+  ];
+
   return (
     <Header
       style={{
@@ -89,25 +159,49 @@ const HeaderComponent = ({ onToggleSidebar }) => {
 
         {/* Logo */}
         <ImageWithBasePath
-          src={
-            isMobile
-              ? "assets/img/logo-small.svg"
-              : "assets/img/logo.svg"
-          }
+          src={isMobile ? "assets/img/logo-small.svg" : "assets/img/logo.svg"}
           alt="Logo"
           width={isMobile ? "80px" : "120px"} // Smaller logo for mobile
           height="32px"
         />
       </div>
 
-      <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-        <Badge count={5}>
+      {/* Right Group with Equal Gaps */}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "16px", // Equal gap between all items
+        }}
+      >
+        {/* Language Dropdown */}
+        <Dropdown
+          menu={{ items: languageItems }}
+          trigger={["click"]}
+          placement="bottomRight"
+        >
           <Button
             type="text"
-            icon={<BellOutlined style={{ fontSize: "18px" }} />}
+            icon={<TranslationOutlined style={{ fontSize: "18px" }} />}
             style={{ display: "flex", alignItems: "center" }}
           />
-        </Badge>
+        </Dropdown>
+
+        {/* Notification Dropdown */}
+        <Dropdown
+          menu={{ items: notificationItems }}
+          trigger={["click"]}
+          placement="bottomRight"
+          overlayStyle={{ width: "300px" }} // Set the width of the dropdown menu
+        >
+          <Badge count={notifications.length}>
+            <Button
+              type="text"
+              icon={<BellOutlined style={{ fontSize: "18px" }} />}
+              style={{ display: "flex", alignItems: "center" }}
+            />
+          </Badge>
+        </Dropdown>
 
         {/* User Dropdown */}
         <Badge status="success" dot>
